@@ -1,0 +1,93 @@
+.news {
+    padding: 0 170px;
+    &-img {
+        width: 800px;
+        height: 358px;
+        img {
+            border-radius: 8px;
+            object-fit: cover;
+        }
+    }
+    &-main {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        &_social {
+            position: sticky;
+            top: 0;
+            padding: 20px 20px 20px 0;
+            display: flex;
+            flex-direction: column;
+            height: fit-content;
+            a{
+                margin-bottom: 25px;
+                i {
+                    height: 50px;
+                    width: 50px;
+                    padding: 12px;
+                    border: 1px solid black;
+                    border-radius: 20%;
+                    font-size: 24px;
+                    transition: 0.3s;
+                    &:hover {
+                        color: #fff;
+                        background-color: #393939;
+                        border: none;
+                    }
+                }
+            }
+        }
+        &_content {
+            padding: 20px;
+            &_title {
+                padding: 20px 0;
+                p {
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 29px;
+                    color: #f05a28;
+                }
+                h3 {
+                    font-weight: 700;
+                    font-size: 30px;
+                    line-height: 37px;
+                    padding: 10px 0;
+                }
+                span {
+                    font-weight: 400;
+                    font-size: 11px;
+                    line-height: 13px;
+                    margin-right: 10px;
+                }
+            }
+            &_bottom {
+                p {
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 23px;
+                }
+            }
+        }
+    }
+}
+
+.oxshar {
+    text-align: center;
+    padding: 60px;
+}
+
+@media only screen and (max-width: 1199px) {
+    .news {
+        padding: 0 80px;
+    }
+};
+
+@media only screen and (max-width: 991px) {
+    .news {
+        padding:0 20px;
+        &-img {
+            width: 680px;
+            height: 358px;
+        }
+    }
+}
