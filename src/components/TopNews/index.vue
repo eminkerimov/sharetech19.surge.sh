@@ -35,6 +35,8 @@ export default {
 };
 </script>
 
+// https://jsonplaceholder.typicode.com/posts?_limit=10
+
 <style scoped lang="scss">
 @import "./style.scss";
 </style>
