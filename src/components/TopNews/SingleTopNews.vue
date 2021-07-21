@@ -22,4 +22,11 @@ export default {
 
 <style lang="scss" scoped>
 @import "./style.scss";
+
+@media only screen and (max-width: 1199px) {
+    .topnews-item-content {
+      width: 120px;
+      margin: 0 5px;
+    }
+}
 </style>

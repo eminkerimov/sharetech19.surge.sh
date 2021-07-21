@@ -25,10 +25,11 @@ export default {
   created() {
     this.$http
       .get(
-        "https://jsonplaceholder.typicode.com/posts?_limit=10"
+        "https://newsapi.org/v2/top-headlines?country=us&apiKey=0906bae561b840eb8efc9af41646b3b5"
       )
       .then(function (data) {
-        this.dataNews = data.body.slice(0, 4);
+        console.log(data);
+        this.dataNews = data.body.articles.slice(0, 4);
       });
   },
 };
