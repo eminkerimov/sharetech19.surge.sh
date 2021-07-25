@@ -2,7 +2,7 @@
   <section class="topnews">
     <div class="container">
       <div class="row">
-        <SingleTopNews :news="news" v-for="news in dataNews" :key="news.id" />
+        <SingleTopNews :news="news"  v-for="news in dataNews" :key="news.id" />
       </div>
     </div>
   </section>
@@ -25,17 +25,14 @@ export default {
   created() {
     this.$http
       .get(
-        "https://newsapi.org/v2/top-headlines?country=us&apiKey=0906bae561b840eb8efc9af41646b3b5"
+        "https://pixabay.com/api/?key=22611941-35feccb113a4702f2550eabeb&q=sea+green+nature&per_page=50"
       )
       .then(function (data) {
-        console.log(data);
-        this.dataNews = data.body.articles.slice(0, 4);
+        this.dataNews = data.body.hits.slice(0,4);
       });
   },
 };
 </script>
-
-// https://jsonplaceholder.typicode.com/posts?_limit=10
 
 <style scoped lang="scss">
 @import "./style.scss";

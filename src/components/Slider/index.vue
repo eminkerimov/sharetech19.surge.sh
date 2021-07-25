@@ -8,16 +8,15 @@
               <img src="../../assets/img/Rectangle 45.png" alt="rectangle45" />
               <div class="slider-item-content">
                 <h3>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmo
+                  Everything in nature is lyrical in its ideal essence, tragic in its fate, and comic in its existence. George Santanayao
                 </h3>
                 <span>
                   <i class="fas fa-user-edit"></i>
-                  2 dəq əvvəl
+                  2 min ago
                 </span>
                 <span>
                   <i class="fas fa-clock"></i>
-                  7 dəq
+                  7 min
                 </span>
                 <span>
                   <i class="fas fa-heart"></i>
@@ -35,16 +34,15 @@
                   <img src="../../assets/img/Rectangle 4.1.png" alt="rectangle45" />
                   <div class="slider-item-content">
                     <h3>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmo
+                      Look deep into nature, and then you will understand everything better. Albert Einstein
                     </h3>
                     <span>
                       <i class="fas fa-user-edit"></i>
-                      2 dəq əvvəl
+                      2 min ago
                     </span>
                     <span>
                       <i class="fas fa-clock"></i>
-                      7 dəq
+                      7 min
                     </span>
                     <span>
                       <i class="fas fa-heart"></i>
@@ -62,7 +60,7 @@
                   <img src="../../assets/img/Rectangle 4.4.png" alt="rectangle45" />
                   <div class="slider-item-content">
                     <h3>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing edit
+                      The earth has music for those who listen. William Shakespeare
                     </h3>
                   </div>
                 </a>
@@ -74,7 +72,7 @@
                   <img src="../../assets/img/Rectangle 4.43.png" alt="rectangle45" />
                   <div class="slider-item-content">
                     <h3>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing edit
+                      Nature does not hurry, yet everything is accomplished. Lao Tzu
                     </h3>
                   </div>
                 </a>

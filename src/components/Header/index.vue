@@ -13,7 +13,7 @@
         <input
           type="text" :value="value" 
           @input="$emit('input', $event.target.value)" 
-          placeholder="Axtarmaq istədiyiniz sözü daxil edin ..."
+          placeholder="Type for searching ..."
         />
         <a @click="searchState" class="header-search_btn" href="#">
           <img src="../../assets/img/Component 2.svg" alt="src" />

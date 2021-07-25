@@ -4,11 +4,11 @@
                <div class="row">
                    <div class="col-12">
                     <div class="footer-content">
-                        <p>2019 © Copyright SHARETECH.AZ , All Rights Reserved.</p>
+                        <p>2021 © Copyright SkyNature , All Rights Reserved.</p>
                         <div class="footer-content_social">
-                            <i class="fab fa-facebook-square"></i>
-                            <i class="fab fa-twitter-square"></i>
-                            <i class="fab fa-google-plus-square"></i>
+                            <a href="#"><i class="fab fa-facebook-square"></i></a>
+                            <a href="#"><i class="fab fa-twitter-square"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-square"></i></a>
                         </div>
                     </div>
                    </div>

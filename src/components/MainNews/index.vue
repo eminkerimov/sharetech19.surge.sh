@@ -5,14 +5,14 @@
         <SingleMainNews
           :news="news"
           :index="index"
-          v-for="(news, index) in filterNews.slice(0, this.newsCount)"
+          v-for="(news, index) in dataNews.slice(0, this.newsCount)"
           :key="news.id"
         />
       </div>
-      <div v-if="newsCount < filterNews.length" class="row">
+      <div v-if="newsCount < dataNews.length" class="row">
         <div class="col-12">
           <div class="mainnews-more">
-            <button @click="moreNews">Digər xəbərlər</button>
+            <button @click="moreNews">Load More</button>
           </div>
         </div>
       </div>
@@ -35,18 +35,11 @@ export default {
   created() {
     this.$http
       .get(
-        "https://jsonplaceholder.typicode.com/posts?_limit=10"
+        "https://pixabay.com/api/?key=22611941-35feccb113a4702f2550eabeb&q=sea+green+nature&per_page=50"
       )
       .then(function (data) {
-        this.dataNews = data.body;
+        this.dataNews = data.body.hits;
       });
-  },
-  computed: {
-    filterNews: function () {
-      return this.dataNews.filter((news) => {
-        return news.title.match(this.name);
-      });
-    },
   },
   methods: {
     moreNews() {

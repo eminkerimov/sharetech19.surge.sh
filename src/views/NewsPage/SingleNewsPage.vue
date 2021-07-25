@@ -1,7 +1,7 @@
 <template>
   <div class="news">
     <div class="news-img">
-      <img src="https://cars.usnews.com/images/article/202002/128389/1_title_2020_kia_optima.jpg" alt="news-title" />
+      <img :src="result.largeImageURL" alt="news-title" />
     </div>
     <div class="news-main">
       <div class="news-main_social">
@@ -13,23 +13,23 @@
       </div>
       <div class="news-main_content">
         <div class="news-main_content_title">
-          <p>{{ news.title }}</p>
-          <h3>{{ news.body }}</h3>
+          <p>{{ result.user }}</p>
+          <h3>{{result.tags}}</h3>
           <span>
             <i class="fas fa-user-edit"></i>
-            {{ news.id }}
+            {{ result.user }}
           </span>
           <span>
             <i class="fas fa-comment-alt"></i>
-            {{ news.id }}
+            {{ result.comments }}
           </span>
           <span>
             <i class="fas fa-clock"></i>
-            {{ time }}
+            {{ result.likes }}
           </span>
         </div>
         <div class="news-main_content_bottom">
-          <p>{{ news.body }}</p>
+          <p>Today, we live with ubiquitous technology designed to constantly pull for our attention. But many scientists believe our brains were not made for this kind of information bombardment, and that it can lead to mental fatigue, overwhelm, and burnout, requiring “attention restoration” to get back to a normal, healthy state. <strong>Strayer is one of those researchers. He believes that being in nature restores depleted attention circuits, which can then help us be more open to creativity and problem-solving.</strong> “When you use your cell phone to talk, text, shoot photos, or whatever else you can do with your cell phone, you’re tapping the prefrontal cortex and causing reductions in cognitive resources,” he says.</p>
         </div>
       </div>
     </div>
@@ -39,14 +39,9 @@
 <script>
 export default {
   props: {
-    news: {
+    result: {
       type: Object,
       required: true,
-    },
-  },
-  computed: {
-    time() {
-      return this.id;
     },
   },
 };

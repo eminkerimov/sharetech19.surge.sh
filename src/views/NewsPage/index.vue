@@ -1,9 +1,9 @@
 <template>
   <div class="container">
-    <SingleNewsPage :news="news" :title="id" />
+    <SingleNewsPage :result="result" :title="id" />
     <div class="row">
       <div class="col-12">
-        <h2 class="oxshar">OXŞAR XƏBƏRLƏR</h2>
+        <h2 class="oxshar">Related News</h2>
       </div>
     </div>
     <MainNews />
@@ -21,15 +21,10 @@ export default {
   },
   data() {
     return {
-      news: {},
+      result: {},
       id: "",
     };
   },
-  // computed: {
-  //   getNews() {
-  //     return this.$route.path;
-  //   },
-  // },
   mounted() {
     this.getNews();
   },
@@ -41,11 +36,14 @@ export default {
       this.id = this.$route.params.id;
       this.$http
         .get(
-          `https://jsonplaceholder.typicode.com/posts/${this.id}`
+          "https://pixabay.com/api/?key=22611941-35feccb113a4702f2550eabeb&q=sea+green+nature&per_page=50"
         )
         .then(function (data) {
-          this.news = data.body;
-        });
+          let result = data.body.hits.filter((item) => {
+                return item.id == this.id;
+            });
+            this.result = result[0];        
+      });
     },
   },
 };

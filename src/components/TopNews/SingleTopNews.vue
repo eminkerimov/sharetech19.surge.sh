@@ -3,11 +3,11 @@
     <a href="#">
       <div class="topnews-item">
         <div class="topnews-item-img">
-          <img src="https://cars.usnews.com/images/article/202002/128389/1_title_2020_kia_optima.jpg" alt="news.title" />
+          <img :src="news.largeImageURL" alt="news.title" />
         </div>
         <div class="topnews-item-content">
-          <h3>{{news.body}}</h3>
-          <p>{{news.title}}</p>
+          <h3>{{news.user}}</h3>
+          <p>{{news.tags}}</p>
         </div>
       </div>
     </a>

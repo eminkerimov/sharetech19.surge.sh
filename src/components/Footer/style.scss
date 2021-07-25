@@ -10,15 +10,24 @@ footer {
             font-weight: bold;
             font-size: 14px;
             line-height: 16px;
-            color: rgba(0, 0, 0, 0.5);
+            color: #2c6401;
         }
         &_social {
             i {
                 font-size: 22px;
                 line-height: 22px;
-                color: rgba(0, 0, 0, 0.5);
+                color: #2c6401;
                 margin-left: 13px;
             }
+        }
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .footer-content {
+        flex-direction: column;
+        &_social{
+            padding: 10px 0;
         }
     }
 }
