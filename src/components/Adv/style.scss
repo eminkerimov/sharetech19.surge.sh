@@ -19,3 +19,14 @@
         }
     }
 }
+
+@media only screen and (max-width: 550px) {
+    .adv {
+        margin: 25px 0;
+        &-panel {
+            h2 {
+                font-size: 22px;
+            }
+        }
+    }
+}

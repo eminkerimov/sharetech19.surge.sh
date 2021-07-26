@@ -24,10 +24,19 @@ footer {
 }
 
 @media only screen and (max-width: 550px) {
-    .footer-content {
-        flex-direction: column;
-        &_social{
-            padding: 10px 0;
+    footer {
+        padding: 0;
+        .footer-content {
+            flex-direction: column;
+            p {
+                font-size: 11px;
+            }
+            &_social{
+                padding: 10px 0;
+                i {
+                    font-size: 17px;
+                }
+            }
         }
     }
 }

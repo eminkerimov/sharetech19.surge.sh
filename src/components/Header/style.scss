@@ -49,3 +49,31 @@ header {
       transform: translate(0);
     }
   }
+
+  @media only screen and (max-width: 550px) {
+    header {
+        .header-main {
+            margin: 15px 0;
+            &_logo {
+                width: 140px;
+                height: 33px;
+            }
+            &_btn {
+                width: 18px;
+                height: 18px;
+            }
+        }
+        .header-search {
+            margin: 15px 0;
+            input {
+                width: 90%;
+                padding: 7px;
+                font-size: 12px;
+            }
+            a {
+                width: 18px;
+                height: 15px;
+            }
+        }
+    }
+}

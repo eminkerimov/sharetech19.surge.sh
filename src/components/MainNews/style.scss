@@ -70,4 +70,36 @@
     }
 }
 
-@import "../Adv/style.scss"
+@import "../Adv/style.scss";
+
+@media only screen and (max-width: 550px) {
+    .mainnews-item_content{
+        p{
+            font-size: 13px;
+            padding: 0;
+        }
+        h3 {
+            font-size: 19px;
+            margin-bottom: 5px;
+        }
+        &_bottom span{
+            font-size: 10px;
+        }
+    }
+    .mainnews{
+        a {
+            margin-bottom: 7px;
+        }
+        &-item .small{
+            margin-bottom: 15px;
+            height: 300px;
+        }
+        &-more {
+            padding: 20px 0 50px;
+            button {
+                font-size: 13px;
+                padding: 10px 20px;
+            }
+        }
+    } 
+};
